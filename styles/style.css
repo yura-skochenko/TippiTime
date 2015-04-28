@@ -55,7 +55,7 @@ header .search span{
 	position: absolute;
 	top: 16px;
 	left: 13%;
-	background: url(image/search_tool.png) no-repeat center;
+	background: url(../image/search_tool.png) no-repeat center;
 }
 nav{
     background: #9dc7df;
@@ -78,7 +78,7 @@ nav li div{
 }
 nav li span{
     padding-right: 35px;
-    background: url(image/arrows.png) no-repeat center right;
+    background: url(../image/arrows.png) no-repeat center right;
 }
 section{
     height: auto;
@@ -122,7 +122,7 @@ section li.title-text .likes{
     font-family: Arial, Verdana;
     line-height: 34px;
     padding-left: 53px;
-    background: url(image/likes.png) no-repeat top left;
+    background: url(../image/likes.png) no-repeat top left;
 }
 section li.price{
     float: right;

@@ -13,10 +13,9 @@ body{
     margin: 0;
     padding: 0;
     min-width: 320px;
+    font-family: Arial, Verdana;
 }
-.ta-left{text-align: left;}
-.ta-center{text-align: center;}
-.ta-right{text-align: right;}
+/* head */
 header{
     padding: 22px 12px 30px;
     background: #f7a4a6;
@@ -28,7 +27,12 @@ header li{
     float: left;
     width: 33%;
 }
-header .ta-center {margin-top: 8px;}
+header .logo {margin-top: 8px;}
+header .refine span{
+    color: #fff;
+    font-size: 20px;
+    margin: 27px 10px 0 0;
+}
 header .search{
     text-align: center;
     margin-top: 20px;
@@ -47,6 +51,11 @@ header .search input{
 	border-radius: 30px;
 	box-shadow: inset 0px 1px 1px 1px rgba(150,143,146,0.9);
 }
+header .search input:focus{outline: none;text-align: left;}
+header .search input:focus::-webkit-input-placeholder {color: transparent;}
+header .search input:focus::-moz-placeholder          {color: transparent;}
+header .search input:focus:-moz-placeholder           {color: transparent;}
+header .search input:focus:-ms-input-placeholder      {color: transparent;}
 header .search input:focus+span{display: none;}
 header .search span{
 	display: block;
@@ -80,12 +89,19 @@ nav li span{
     padding-right: 35px;
     background: url(../image/arrows.png) no-repeat center right;
 }
-section{
+/* salon list */
+section.salon-list{
     height: auto;
     min-height: 237px;
-    padding: 52px 4%;
-    background: #fbf2f7;
+    padding: 21px 2%;
 }
+section.salon-list .salon-block{
+    border: 1px solid #fcdada;
+    box-shadow: 0 0 0 1px #f7a4a6;
+}
+section.salon-list .salon-block+.salon-block{margin-top: 24px;}
+section.salon-list .salon-block img{margin-right: 26px;}
+section.salon-list .salon-block h2{margin: 40px 0 17px;}
 section+section{border-top: 1px solid #6176b7;}
 section>ul>li{float: left;}
 section li.image{

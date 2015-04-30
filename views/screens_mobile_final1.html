@@ -3,15 +3,15 @@
 <head>
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
     <title></title>
-    <link href="../styles/style.css" rel="stylesheet" media="all">
     <link href="../styles/bootstrap.css" rel="stylesheet" media="all">
+    <link href="../styles/style.css" rel="stylesheet" media="all">
 
 </head>
 <body>
 
 <header>
     <ul>
-        <li class="text-left"><a><img src="../image/menu_sign.png"></a></li>
+        <li class="text-left popup-menu"><a><img src="../image/menu_sign.png"></a></li>
         <li class="text-center logo"><a href="/"><img src="../image/logo.png"></a></li>
         <li class="text-right refine"><a href="screens_mobile_final10.html"><img class="pull-right" src="../image/ref_sign.png"><span class="pull-right">Refine</span></a></li>
     </ul>
@@ -30,7 +30,7 @@
     </ul>
 </nav>
 
-<div class="row-fluid salon-filter">
+<!--<section class="row-fluid salon-filter">
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
             <select name="">
                 <option value="">For 3</option>
@@ -53,74 +53,67 @@
             </select>
         </div>
     </ul>
-    <ul>
-        <li><span>For 3</span></li>
-        <li><div><span>3/27</span></div></li>
-        <li><span>7:50pm</span></li>
-    </ul>
-</div>
+</section>-->
 
-<section class="salon-list">
-    <div class="salon-block col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <img class="pull-left" src="../image/demo/demo-list.png">
-        <div class="pull-left">
+<main class="salon-list">
+    <section class="salon-block">
+        <img class="pull-left img-salon" src="../image/demo/demo-list.png">
+        <div class="salon-block-info">
             <h2>Rainbow unicorn studio</h2>
             <p>1235 Jefferson Highway</p>
             <ul>
-                <li>750</li>
-                <li>$$$</li>
-                <li>0.1mi</li>
+                <li class="likes"><img src="../image/sprites.png" alt="">750</li>
+                <li class="ranking-price">
+                    <ul>
+                        <li class="active-price">$</li>
+                        <li class="active-price">$</li>
+                        <li class="active-price">$</li>
+                        <li>$</li>
+                    </ul>
+                </li>
+                <li><span>0.1mi</span></li>
             </ul>
         </div>
-    </div>
-    <div class="salon-block col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <img class="pull-left" src="../image/demo/demo-list2.png">
-        <div class="pull-left">
+    </section>
+    <section class="salon-block">
+        <img class="pull-left img-salon" src="../image/demo/demo-list2.png">
+        <div class="salon-block-info">
             <h2>Bliss salon & Day Spa</h2>
             <p>3377  SE Division St., Suite 103  Portland</p>
             <ul>
-                <li>345</li>
-                <li>$$</li>
-                <li>1.0mi</li>
+                <li class="likes"><img src="../image/sprites.png" alt="">345</li>
+                <li class="ranking-price">
+                    <ul>
+                        <li class="active-price">$</li>
+                        <li class="active-price">$</li>
+                        <li>$</li>
+                        <li>$</li>
+                    </ul>
+                </li>
+                <li><span>1.0mi</span></li>
             </ul>
         </div>
-    </div>
-    <div class="salon-block col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <img class="pull-left" src="../image/demo/demo-list3.png">
-        <div class="pull-left">
+    </section>
+    <section class="salon-block">
+        <img class="pull-left img-salon" src="../image/demo/demo-list3.png">
+        <div class="salon-block-info">
             <h2>Neil  Atelier</h2>
             <p>1023 NW 23rd Ave Portland, OR  97210</p>
             <ul>
-                <li>350</li>
-                <li>$$</li>
-                <li>1.5mi</li>
+                <li class="likes"><img src="../image/sprites.png" alt="">350</li>
+                <li class="ranking-price">
+                    <ul>
+                        <li class="active-price">$</li>
+                        <li class="active-price">$</li>
+                        <li>$</li>
+                        <li>$</li>
+                    </ul>
+                </li>
+                <li><span>1.5mi</span></li>
             </ul>
         </div>
-    </div>
-    <ul>
-        <li class="image"><img src="../image/nails.png" width="140" height="140"/></li>
-        <li class="title-text">
-            <h2>Rainbow unicorn studio</h2>
-            <ul>
-                <li>1235 Jefferson Highway</li>
-                <li></li>
-            </ul>
-            <div class="likes">750</div>
-        </li>
-        <li class="price">
-            <ul>
-                <li><strong>$ </strong>400</li>
-                <li>0.1mi</li>
-            </ul>
-        </li>
-    </ul>
-    <ul class="date">
-        <li>7:00pm</li>
-        <li>7:15pm</li>
-        <li>7:30pm</li>
-        <li>7:45pm</li>
-    </ul>
-</section>
+    </section>
+</main>
 
 
 </body>

@@ -2,67 +2,67 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-    <title></title>
+    <meta charset="utf-8">
+    <title>TippiTime</title>
     <link href="../styles/bootstrap.css" rel="stylesheet" media="all">
     <link href="../styles/style.css" rel="stylesheet" media="all">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../scripts/bootstrap-select.js"></script>
+    <script type="text/javascript" src="../scripts/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="../scripts/common.js"></script>
 </head>
 <body>
-
-<header>
-    <ul>
-        <li class="text-left popup-menu"><a><img src="../image/menu_sign.png"></a></li>
-        <li class="text-center logo"><a href="/"><img src="../image/logo.png"></a></li>
-        <li class="text-right refine"><a href="screens_mobile_final10.html"><img class="pull-right" src="../image/ref_sign.png"><span class="pull-right">Refine</span></a></li>
-    </ul>
-
-    <div class="search">
-        <input type="search" name="" placeholder="Search">
-        <span></span>
-    </div>
-</header>
-
-<nav>
-    <ul>
-        <li><span>For 3</span></li>
-        <li><div><span>3/27</span></div></li>
-        <li><span>7:50pm</span></li>
-    </ul>
-</nav>
-
-<!--<section class="row-fluid salon-filter">
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-            <select name="">
-                <option value="">For 3</option>
-                <option value="">For 3</option>
-                <option value="">For 3</option>
-            </select>
+    <!-- -- Header -- -->
+    <header>
+        <ul>
+            <li class="text-left popup-menu"><a href="#signin-join" data-toggle="modal"><img src="../image/menu_sign.png"></a></li>
+            <li class="text-center logo"><a href="/"><img src="../image/logo.png"></a></li>
+            <li class="text-right refine"><a href="screens_mobile_final10.html" class="pull-right"><img class="pull-right" src="../image/ref_sign.png"><span class="pull-right hid480">Refine</span></a></li>
+        </ul>
+        <!-- -- Search -- -->
+        <div class="search">
+            <input type="search" name="" placeholder="Search">
+            <span></span>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-            <select name="">
-                <option value="">3/27</option>
-                <option value="">3/27</option>
-                <option value="">3/27</option>
-            </select>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-            <select name="">
-                <option value="">7:50pm</option>
-                <option value="">7:50pm</option>
-                <option value="">7:50pm</option>
-            </select>
-        </div>
-    </ul>
-</section>-->
+    </header>
+    <!-- -- Page filter salons -- -->
+    <section class="salon-filter">
+        <ul>
+            <li>
+                <select class="selectpicker">
+                    <option>For 3</option>
+                    <option>For 4</option>
+                    <option>For 5</option>
+                </select>
+            </li>
+            <li>
+                <select class="selectpicker">
+                    <option>3/27</option>
+                    <option>4/27</option>
+                    <option>5/27</option>
+                </select>
+            </li>
+            <li>
+                <select class="selectpicker">
+                    <option>7:50pm</option>
+                    <option>8:50pm</option>
+                    <option>9:50pm</option>
+                </select>
+            </li>
+        </ul>
+    </section>
+    <!-- -- Salons list -- -->
+    <main class="salon-list">
 
-<main class="salon-list">
-    <section class="salon-block">
-        <img class="pull-left img-salon" src="../image/demo/demo-list.png">
-        <div class="salon-block-info">
-            <h2>Rainbow unicorn studio</h2>
-            <p>1235 Jefferson Highway</p>
+        <section class="salon-block">
+            <img class="pull-left img-salon" src="../image/demo/demo-list.png">
+            <div class="salon-block-info">
+                <h2 class="salon-name">Rainbow unicorn studio</h2>
+                <p class="salon-address">1235 Jefferson Highway</p>
+            </div>
             <ul>
-                <li class="likes"><img src="../image/sprites.png" alt="">750</li>
+                <li class="likes"><img src="../image/likes.png" alt="">750</li>
                 <li class="ranking-price">
                     <ul>
                         <li class="active-price">$</li>
@@ -73,15 +73,16 @@
                 </li>
                 <li><span>0.1mi</span></li>
             </ul>
-        </div>
-    </section>
-    <section class="salon-block">
-        <img class="pull-left img-salon" src="../image/demo/demo-list2.png">
-        <div class="salon-block-info">
-            <h2>Bliss salon & Day Spa</h2>
-            <p>3377  SE Division St., Suite 103  Portland</p>
+        </section>
+
+        <section class="salon-block">
+            <img class="pull-left img-salon" src="../image/demo/demo-list2.png">
+            <div class="salon-block-info">
+                <h2 class="salon-name">Bliss salon & Day Spa</h2>
+                <p class="salon-address">3377  SE Division St., Suite 103  Portland</p>
+            </div>
             <ul>
-                <li class="likes"><img src="../image/sprites.png" alt="">345</li>
+                <li class="likes"><img src="../image/likes.png" alt="">345</li>
                 <li class="ranking-price">
                     <ul>
                         <li class="active-price">$</li>
@@ -92,15 +93,16 @@
                 </li>
                 <li><span>1.0mi</span></li>
             </ul>
-        </div>
-    </section>
-    <section class="salon-block">
-        <img class="pull-left img-salon" src="../image/demo/demo-list3.png">
-        <div class="salon-block-info">
-            <h2>Neil  Atelier</h2>
-            <p>1023 NW 23rd Ave Portland, OR  97210</p>
+        </section>
+
+        <section class="salon-block">
+            <img class="pull-left img-salon" src="../image/demo/demo-list3.png">
+            <div class="salon-block-info">
+                <h2 class="salon-name">Neil  Atelier</h2>
+                <p class="salon-address">1023 NW 23rd Ave Portland, OR  97210</p>
+            </div>
             <ul>
-                <li class="likes"><img src="../image/sprites.png" alt="">350</li>
+                <li class="likes"><img src="../image/likes.png" alt="">350</li>
                 <li class="ranking-price">
                     <ul>
                         <li class="active-price">$</li>
@@ -111,10 +113,26 @@
                 </li>
                 <li><span>1.5mi</span></li>
             </ul>
-        </div>
-    </section>
-</main>
+        </section>
 
+    </main>
+
+<!-- Modal window -->
+    <div class="modal" id="signin-join" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        </div>
+        <div class="modal-body">
+            <a href="screens_mobile_final7.html" class="btn-confirm-large">SIGN IN</a>
+            <a href="screens_mobile_final9.html" class="btn-confirm-large">JOIN</a>
+        </div>
+        <div class="modal-footer">
+            <ul class="info-article">
+                <li><a href="screens_mobile_final12.html">Terms of use</a></li>
+                <li><a href="screens_mobile_final13.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
 
 </body>
 </html>

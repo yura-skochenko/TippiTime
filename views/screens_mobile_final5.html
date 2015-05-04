@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta charset="utf-8">
+    <title>TippiTime</title>
+    <link href="../styles/bootstrap.css" rel="stylesheet" media="all">
+    <link href="../styles/style.css" rel="stylesheet" media="all">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../scripts/bootstrap-select.js"></script>
+    <script src="http://jedfoster.com/js/readmore.min.js"></script>
+    <script type="text/javascript" src="../scripts/common.js"></script>
+</head>
+<body>
+    <!-- -- Header -- -->
+    <header>
+        <ul>
+            <li class="text-left popup-menu"><a href="#signin-join" data-toggle="modal"><img src="../image/menu_sign.png"></a></li>
+            <li class="text-center logo"><a href="/"><img src="../image/logo.png"></a></li>
+            <li class="text-right refine"><a href="screens_mobile_final10.html" class="pull-right"><img class="pull-right" src="../image/ref_sign.png"><span class="pull-right hid480">Refine</span></a></li>
+        </ul>
+    </header>
+    <!-- -- Reservation confirmed -- -->
+    <main class="reservation-confirmed">
+
+        <h1 class="title-pages">Reservation Confirmed</h1>
+        <div class="schedule-salon clearfix">
+            <div class="pull-left">
+                <h2 class="salon-name">Rainbow unicorn studio</h2>
+                <p class="salon-address">1235 Jefferson Highway</p>
+                <h4>7:00 PM for 3 people</h4>
+                <table>
+                    <tr>
+                        <td>You:</td>
+                        <td>Basic Pedicure, Full set</td>
+                    </tr>
+                    <tr>
+                        <td>Guest 1:</td>
+                        <td>Basic Pedicure</td>
+                    </tr>
+                    <tr>
+                        <td>Guest 2:</td>
+                        <td>Basic Pedicure</td>
+                    </tr>
+                </table>
+            </div>
+            <img src="../image/demo/info-tab.png" class="pull-left img-circle">
+        </div>
+        <!-- -- Map salon -- -->
+        <div class="salon-location">
+            <img src="../image/demo/map.png" class="img-responsive">
+        </div>
+        <!-- Btn group -- -->
+        <ul>
+            <li class="clearfix">
+                <a href="tel:13465" class="btn btn-confirm pull-left">Call<i class="icon-tel pull-right"></i></a>
+                <button class="btn btn-confirm pull-right"><i class="icon-calendar pull-left"></i>Calendar</button>
+            </li>
+            <li>
+                <button class="btn btn-cancel pull-left" data-toggle="modal" data-target="#confirmation">Cancel<i class="icon-cancel pull-right"></i></button>
+                <a href="screens_mobile_final2.html" class="btn btn-cancel pull-right"><i class="icon-modify pull-left"></i>Modify</a>
+            </li>
+        </ul>
+
+    </main>
+
+    <!-- Modal window -->
+    <div class="modal" id="signin-join" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        </div>
+        <div class="modal-body">
+            <a href="screens_mobile_final7.html" class="btn-confirm-large">SIGN IN</a>
+            <a href="screens_mobile_final9.html" class="btn-confirm-large">JOIN</a>
+        </div>
+        <div class="modal-footer">
+            <ul class="info-article">
+                <li><a href="screens_mobile_final12.html">Terms of use</a></li>
+                <li><a href="screens_mobile_final13.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- -- Confirm cancel modal -- -->
+    <div class="modal" id="confirmation" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        </div>
+        <div class="modal-body">
+            <h3>Confirm</h3>
+            <p>Are you sure you would like to cancel your reservation?</p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-small" data-dismiss="modal" aria-hidden="true">No</button>
+            <a href="screens_mobile_final1.html" class="btn btn-small">Yes</a>
+        </div>
+    </div>
+
+</body>
+</html>
